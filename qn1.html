@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .as{
+            color:blue;
+        }
+        .as:hover{
+            color:red;
+        }
+        .as:active{
+            color: green;
+
+        }
+        .webpage{
+            font: Arial;
+            text-shadow:2px 2px 4px rgba(0,2,0,1.3);
+        }
+        .p{
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .card {
+               border: 1px solid gray; 
+               padding: 20px;
+               margin: 10px; 
+               max-width: 300px; 
+               font-style: Arial; 
+            }
+        
+         .a{
+            background-color: blue;
+            color: white;
+        }
+        .a:hover{
+            background-color: darkblue;
+            animation-duration: 0.3s;
+        }
+        .gallery{           
+           grid-template-columns: repeat(2, 1fr); 
+           gap: 10px; 
+           grid-area:600px;                   
+                         
+         }
+         .navbar {
+    display: flex; 
+    gap: 30px; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;}
+    .box{
+            position: relative;
+            width:100px;
+            height:100px;
+            background-color:green;
+            animation-name:move-box;
+            animation-duration: 5s;
+        }
+        @keyframes move-box{
+        0%{left:0;}
+        100%{right:300px}
+        }
+        
+    
+.scl-btn {
+    width: 150px; 
+    height: 50px; 
+    background-color: blue; 
+    color: white; 
+    
+}
+.scl-btn:hover {
+    transform: scale(1.2); 
+}
+.image {
+    position: relative;
+    width: 100%;
+    max-width: 600px; 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 2rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-align: center; 
+    background-color: violet;
+}
+    
+     </style>
+</head>
+<body>
+    <ul class="as">
+        <li><a href="https://www.bing.com/search?pglt=297&q=flowers+images&cvid=def0da647a1c4e2fa1137f6d7ceb6d23&gs_lcrp=EgRlZGdlKgcIABAAGPkHMgcIABAAGPkHMgYIARBFGDkyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEEUYPNIBCDQ4NDlqMGoxqAIAsAIA&FORM=ANNTA1&adppc=EDGEESS&PC=HCTS">link1</a></li>
+        <li><a href="https://www.bing.com/search?q=doraemon+images&qs=SS&pq=doremon+images&sc=10-14&cvid=AB1652097B034F63B42E20B4EC5FB9F7&FORM=QBRE&sp=1&ghc=1&lq=0">link2</a></li>
+        <li><a href="">link3</a></li>
+        <li><a href="">link4</a></li>
+    </ul><br></br>
+    <div>
+    <h1 class="webpage">WEBPAGE</h1>
+    <p class="p">- Set the font of the title to `Arial`.
+        - Set the font size of the paragraph to `1.2rem` and line height to `1.6`.
+        - Add text shadow to the title and text alignment to `justify` for the paragraph</p>
+
+    <div class="card">
+    <p>Use a div with the class card containing some text.</p>
+    </div>
+    <div class="gallery">
+        <img src="https://img.freepik.com/free-photo/closeup-shot-beautiful-purple-petaled-black-eyed-susan-flower-blurred-background_181624-23314.jpg?ga=GA1.1.1015614839.1732267911&semt=ais_hybrid" height="100" width="100" alt="">
+        <img src="https://img.freepik.com/free-photo/gerbera-flowers_1112-1917.jpg?t=st=1732965858~exp=1732969458~hmac=18d51d129164a1f215a39ceae8b3a633334a8a9db5ac3ffbc26d1db31a7a68db&w=900" height="100" width="100" alt=""><br><br>
+        <img src="https://img.freepik.com/free-photo/water-splash-isolated-white-background_1112-2043.jpg?t=st=1732965827~exp=1732969427~hmac=08b0749fb3f48a25ccd979696a5dafcc91f7b0818485c8e9f0bdd585214c71c3&w=900" height="100" width="100" alt="">
+        <img src="https://img.freepik.com/free-photo/cup-aromatic-coffee-outdoors_1112-448.jpg?t=st=1732965920~exp=1732969520~hmac=d66cf66763ad2d8bd2a3925c3e811cf1d1f3768a4fc2f551ab90334e1ca3a942&w=900" height="100" width="100" alt="">
+    </div>
+    <button class="a">Create a button that changes.</button>
+    <nav class="navbar">
+        <a href="https://www.bmw-kunexclusive-hyderabad.in/">Home</a>
+        <a href="https://www.bmw-kunexclusive-hyderabad.in/excellence-club">Services</a>
+        <a href="https://shop.bmw.in/#/stock-locator?orderStatus=O1&priceRange=4690000,26200000,4690000,26200000,&dealers=34979&dealerGroup=true&installmentRange=47000,357000,47000,357000">Buy now</a>
+    </nav>
+    <div class="box">slide</div>
+    <button class="scl-btn">button</button>
+    <div class="image">
+        <img src="https://img.freepik.com/free-photo/vibrant-colors-nature-close-up-wet-purple-daisy-generated-by-artificial-intellingence_25030-63819.jpg" alt="Image" class="background-image">
+        <div class="text-overlay">Your Text Here</div>
+    </div>
+
+
+
+    
+</body>
+</html>
